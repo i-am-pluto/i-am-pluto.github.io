@@ -1,6 +1,6 @@
-title: Parikshit
-description: Systems, self-hosted software, and agents that maintain themselves.
-url: https://igts.me
+title: Still a Planet
+description: Notes from a small, self-hosted world. Systems, software and agents that maintain themselves.
+url: https://i-am-pluto.github.io
 plugins: [jekyll-feed]
 permalink: /blog/:year/:month/:slug/
 exclude: [README.md]

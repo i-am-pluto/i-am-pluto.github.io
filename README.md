@@ -1,4 +1,4 @@
-# igts.me
+# Still a Planet
 
 Jekyll site, built by GitHub Pages on every push to `main`.
 

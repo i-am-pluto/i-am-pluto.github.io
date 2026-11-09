@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<h1>Hi, I'm Parikshit.</h1>
+<h1>Still a planet.</h1>
+<p class="sub">Notes from a small, self-hosted world, by Parikshit (<a href="https://github.com/i-am-pluto">i-am-pluto</a>).</p>
 <p class="lede">I build systems from the ground up and run my own software. These days that means a family of self-hosted apps, and an agent that keeps improving them.</p>
 
 <h2 id="projects">What I'm building</h2>
