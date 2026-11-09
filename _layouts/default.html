@@ -6,13 +6,19 @@
 <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip | escape }}">
 {% if page.canonical %}<link rel="canonical" href="{{ page.canonical }}">{% endif %}
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="stylesheet" href="/brand/brand.css">
 <link rel="stylesheet" href="/assets/style.css">
 {% feed_meta %}
 </head>
 <body>
-<header><a class="brand" href="/">still a planet</a>
-<nav><a href="/#projects">projects</a><a href="/blog/">writing</a><a href="/feed.xml">rss</a></nav></header>
-<main>{{ content }}</main>
-<footer>© {{ 'now' | date: '%Y' }} Parikshit · <a href="https://github.com/i-am-pluto">GitHub</a></footer>
+<header class="top">
+<a class="mark" href="/">still a planet<i></i></a>
+<nav><a href="/#projects">projects</a><a href="/blog/">writing</a><a href="/feed.xml">rss</a>
+<button class="icon-btn" id="theme" aria-label="toggle theme">◐</button></nav>
+</header>
+<main class="wrap">{{ content }}</main>
+<footer class="foot">Demoted in 2006, still orbiting · © {{ 'now' | date: '%Y' }} Parikshit · <a href="https://github.com/i-am-pluto">github</a></footer>
+<script>document.getElementById("theme").onclick=function(){var d=document.documentElement,dark=d.dataset.theme?d.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches,n=dark?"light":"dark";d.dataset.theme=n;try{localStorage.setItem("theme",n)}catch(e){}}</script>
 </body>
 </html>

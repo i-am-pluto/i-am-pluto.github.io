@@ -2,7 +2,8 @@
 layout: default
 title: Writing
 ---
+<span class="eyebrow">archive</span>
 <h1>Writing</h1>
-<ul class="posts">
-{% for p in site.posts %}<li><span>{{ p.date | date: "%b %-d, %Y" }}</span><a href="{{ p.url }}">{{ p.title }}</a></li>
+<ul class="list">
+{% for p in site.posts %}<li><time>{{ p.date | date: "%Y-%m-%d" }}</time><a href="{{ p.url }}">{{ p.title }}</a></li>
 {% endfor %}</ul>

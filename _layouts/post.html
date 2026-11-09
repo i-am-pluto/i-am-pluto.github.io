@@ -1,8 +1,9 @@
 ---
 layout: default
 ---
-<article>
+<article class="post">
+<span class="eyebrow">post</span>
 <h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.medium %} · <a href="{{ page.medium }}">also on Medium</a>{% endif %}</p>
-{{ content }}
+<p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.medium %} · <a href="{{ page.medium }}">also on medium</a>{% endif %}</p>
+<div class="body">{{ content }}</div>
 </article>
