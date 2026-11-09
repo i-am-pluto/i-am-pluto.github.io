@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<article>
+<h1>{{ page.title }}</h1>
+<p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.medium %} · <a href="{{ page.medium }}">also on Medium</a>{% endif %}</p>
+{{ content }}
+</article>

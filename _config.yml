@@ -1,0 +1,6 @@
+title: Parikshit
+description: Systems, self-hosted software, and agents that maintain themselves.
+url: https://igts.me
+plugins: [jekyll-feed]
+permalink: /blog/:year/:month/:slug/
+exclude: [README.md]

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | strip | escape }}">
+{% if page.canonical %}<link rel="canonical" href="{{ page.canonical }}">{% endif %}
+<link rel="stylesheet" href="/assets/style.css">
+{% feed_meta %}
+</head>
+<body>
+<header><a class="brand" href="/">parikshit</a>
+<nav><a href="/#projects">projects</a><a href="/blog/">writing</a><a href="/feed.xml">rss</a></nav></header>
+<main>{{ content }}</main>
+<footer>© {{ 'now' | date: '%Y' }} Parikshit · <a href="https://github.com/i-am-pluto">GitHub</a></footer>
+</body>
+</html>
